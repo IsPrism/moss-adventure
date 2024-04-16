@@ -1,5 +1,9 @@
-var c = document.getElementById("canvas");
-var ctx = c.getContext("2d")
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 
 ctx.fillStyle = "green";
-ctx.fillRect(0, 0, c.width, c.height);
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+const draw = () => {
+    ctx.drawImage()
+}
