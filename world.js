@@ -12,5 +12,5 @@ const tileRows = Math.round(canvas.width/tileHeight);
 const tileset = new Image();
 tileset.src = "resources/tileset.png"
 tileset.onload = function() {
-    ctx.drawImage(tileset, 0, 0, 32, 32)
+    ctx.drawImage(tileset, 0, 0, 32, 32, 0, 0, 32, 32)
 };
