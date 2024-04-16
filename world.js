@@ -9,8 +9,13 @@ const tileHeight = 32;
 const tileColumns = Math.round(canvas.width/tileWidth);
 const tileRows = Math.round(canvas.width/tileHeight);
 
+function drawChunk() {
+    ctx.drawImage(tileset, 0, 0, tileWidth, tileHeight, 0, 0, tileWidth, tileHeight)
+    ctx.drawImage(tileset, 32, 0, tileWidth, tileHeight, 32, 0, tileWidth, tileHeight)
+};
+
 const tileset = new Image();
 tileset.src = "resources/tileset.png"
 tileset.onload = function() {
-    ctx.drawImage(tileset, 0, 0, 32, 32, 0, 0, 32, 32)
+    drawChunk();
 };
