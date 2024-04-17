@@ -17,5 +17,7 @@ function drawChunk() {
 const tileset = new Image();
 tileset.src = "resources/tileset.png"
 tileset.onload = function() {
-    drawChunk();
+    for (let i = 0; i < 6; i++) {
+        drawChunk();
+    }
 };
