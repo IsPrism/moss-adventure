@@ -12,12 +12,14 @@ const tileRows = Math.round(canvas.width/tileHeight);
 function drawChunk() {
     ctx.drawImage(tileset, 0, 0, tileWidth, tileHeight, 0, 0, tileWidth, tileHeight)
     ctx.drawImage(tileset, 32, 0, tileWidth, tileHeight, 32, 0, tileWidth, tileHeight)
+    ctx.drawImage(tileset, 64, 0, tileWidth, tileHeight, 0, 0, tileWidth, tileHeight)
+    ctx.drawImage(tileset, 96, 0, tileWidth, tileHeight, 32, 0, tileWidth, tileHeight)
+    ctx.drawImage(tileset, 128, 0, tileWidth, tileHeight, 0, 0, tileWidth, tileHeight)
+    ctx.drawImage(tileset, 160, 0, tileWidth, tileHeight, 32, 0, tileWidth, tileHeight)
 };
 
 const tileset = new Image();
 tileset.src = "resources/tileset.png"
 tileset.onload = function() {
-    for (let i = 0; i < 6; i++) {
-        drawChunk();
-    }
+    drawChunk();
 };
