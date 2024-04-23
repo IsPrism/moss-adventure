@@ -64,5 +64,5 @@ class Chunk {
 };
 
 tileset.onload = function() {
-    new Chunk([0], 3, 3, 3)
-}
+    new Chunk([0], 3, 3, 3);
+};
