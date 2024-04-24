@@ -62,5 +62,3 @@ var chunk9 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 2);
 var chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
 var chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
 var chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
-
-drawAllChunks();

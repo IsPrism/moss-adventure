@@ -13,3 +13,6 @@ const cropHeight = 16;
 
 const tileset = new Image();
 tileset.src = "resources/tileset.png"
+tileset.onload = function() {
+    drawAllChunks();
+};
