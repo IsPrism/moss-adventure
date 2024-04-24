@@ -1,12 +1,11 @@
-var tiles;
+let tiles;
 
 fetch('tiles.json')
-    .then(response => response.json())
-    .then(data => {
-        tiles = data;
-    })
-    .then(data => console.log(data));
-
+  .then(response => response.json())
+  .then(data => {
+    tiles = data;
+  })
+  
 JSON.parse(tiles)
 
 class Chunk {
