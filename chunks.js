@@ -1,5 +1,7 @@
 const tiles = fetch('tiles.json')
 
+console.log(tiles)
+
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
         this.tilesList = tilesList;
