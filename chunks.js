@@ -1,10 +1,30 @@
 let tiles;
 
-fetch('tiles.json')
-  .then(response => response.json())
-  .then(data => {
+async function fetchData() {
+  try {
+    const response = await fetch('tiles.json');
+    const data = await response.json();
     tiles = data;
-  })
+
+    chunk1.drawChunk();
+    chunk2.drawChunk();
+    chunk3.drawChunk();
+    chunk4.drawChunk();
+    chunk5.drawChunk();
+    chunk6.drawChunk();
+    chunk7.drawChunk();
+    chunk8.drawChunk();
+    chunk9.drawChunk();
+    chunk10.drawChunk();
+    chunk11.drawChunk();
+    chunk12.drawChunk();
+
+  } 
+  catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
@@ -42,23 +62,3 @@ var chunk9 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 2);
 var chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
 var chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
 var chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
-
-
-async function drawAllChunks() {
-  await tiles
-
-  chunk1.drawChunk();
-  chunk2.drawChunk();
-  chunk3.drawChunk();
-  chunk4.drawChunk();
-  chunk5.drawChunk();
-  chunk6.drawChunk();
-  chunk7.drawChunk();
-  chunk8.drawChunk();
-  chunk9.drawChunk();
-  chunk10.drawChunk();
-  chunk11.drawChunk();
-  chunk12.drawChunk();
-};
-
-drawAllChunks();
