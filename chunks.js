@@ -56,7 +56,7 @@ class Chunk {
         this.posY = posY * tileHeight * 3;
     };
     drawTile(tileIndex, tilePosX, tilePosY) {
-        ctx.drawImage(tileset, tiles[this.tilesList[tileIndex]].cropX, tiles[this.tilesList[tileIndex]].cropY, cropWidth, cropHeight, this.posX + tileWidth * tilePosX, this.posY + tileHeight * tileposY, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[tileIndex]].cropX, tiles[this.tilesList[tileIndex]].cropY, cropWidth, cropHeight, this.posX + tileWidth * tilePosX, this.posY + tileHeight * tilePosY, tileWidth, tileHeight);
     };
     drawChunk() {
         this.drawTile(0, 0, 0);
