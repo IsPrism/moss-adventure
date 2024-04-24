@@ -1,7 +1,9 @@
+const tiles;
+
 fetch('tiles.json')
     .then(response => response.json())
     .then(data => {
-        const tiles = data;
+        tiles = data;
     })
     .then(data => console.log(data));
 
