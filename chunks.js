@@ -56,11 +56,20 @@ class Chunk {
         this.posY = posY * tileHeight * 3;
     };
     drawChunk() {
-        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX, this.posY, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 0, this.posY + tileHeight * 0, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[1]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 1, this.posY + tileHeight * 0, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[2]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 2, this.posY + tileHeight * 0, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[3]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 0, this.posY + tileHeight * 1, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[4]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 1, this.posY + tileHeight * 1, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[5]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 2, this.posY + tileHeight * 1, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[6]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 0, this.posY + tileHeight * 2, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[7]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 1, this.posY + tileHeight * 2, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[8]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX + tileWidth * 2, this.posY + tileHeight * 2, tileWidth, tileHeight);
     };
 };
 
-let chunk1 = new Chunk([0], 0, 0);
+let chunk1 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 0);
+let chunk2 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 0);
 
 tileset.onload = function() {
     chunk1.drawChunk();
