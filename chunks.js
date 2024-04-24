@@ -60,3 +60,5 @@ async function drawAllChunks() {
   chunk11.drawChunk();
   chunk12.drawChunk();
 };
+
+drawAllChunks();
