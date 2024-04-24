@@ -1,4 +1,4 @@
-let tiles;
+var tiles;
 
 fetch('tiles.json')
     .then(response => response.json())
@@ -44,15 +44,15 @@ let chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
 let chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
 let chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
 
-    chunk1.drawChunk();
-    chunk2.drawChunk();
-    chunk3.drawChunk();
-    chunk4.drawChunk();
-    chunk5.drawChunk();
-    chunk6.drawChunk();
-    chunk7.drawChunk();
-    chunk8.drawChunk();
-    chunk9.drawChunk();
-    chunk10.drawChunk();
-    chunk11.drawChunk();
-    chunk12.drawChunk();
+chunk1.drawChunk();
+chunk2.drawChunk();
+chunk3.drawChunk();
+chunk4.drawChunk();
+chunk5.drawChunk();
+chunk6.drawChunk();
+chunk7.drawChunk();
+chunk8.drawChunk();
+chunk9.drawChunk();
+chunk10.drawChunk();
+chunk11.drawChunk();
+chunk12.drawChunk();
