@@ -9,7 +9,7 @@ canvas {
     bottom: 0;
     left: 0;
     right: 0;
-    border: 8px black;
+    border: 8px;
 }
 html, body{
     overflow: hidden;
