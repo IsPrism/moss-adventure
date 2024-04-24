@@ -52,8 +52,8 @@ let tiles = [
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
         this.tilesList = tilesList;
-        this.posX = posX * tileWidth;
-        this.posY = posY * tileHeight;
+        this.posX = posX * tileWidth * 3;
+        this.posY = posY * tileHeight * 3;
     };
     drawChunk() {
         ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX, this.posY, tileWidth, tileHeight);
