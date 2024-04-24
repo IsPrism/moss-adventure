@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = "black";
+ctx.imageSmoothingEnabled = false;
 
 const tileWidth = 70;
 const tileHeight = 70;
