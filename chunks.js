@@ -1,4 +1,4 @@
-const tiles = JSON.stringify('/json/tiles.json')
+fetch('tiles.json')
 
 console.log(tiles)
 
