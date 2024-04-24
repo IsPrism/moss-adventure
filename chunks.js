@@ -43,15 +43,20 @@ var chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
 var chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
 var chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
 
-chunk1.drawChunk();
-chunk2.drawChunk();
-chunk3.drawChunk();
-chunk4.drawChunk();
-chunk5.drawChunk();
-chunk6.drawChunk();
-chunk7.drawChunk();
-chunk8.drawChunk();
-chunk9.drawChunk();
-chunk10.drawChunk();
-chunk11.drawChunk();
-chunk12.drawChunk();
+
+async function drawAllChunks() {
+  await tiles
+
+  chunk1.drawChunk();
+  chunk2.drawChunk();
+  chunk3.drawChunk();
+  chunk4.drawChunk();
+  chunk5.drawChunk();
+  chunk6.drawChunk();
+  chunk7.drawChunk();
+  chunk8.drawChunk();
+  chunk9.drawChunk();
+  chunk10.drawChunk();
+  chunk11.drawChunk();
+  chunk12.drawChunk();
+};
