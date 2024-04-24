@@ -1,4 +1,4 @@
-fetch('tiles.json')
+const tiles = fetch('tiles.json')
 
 console.log(tiles)
 
