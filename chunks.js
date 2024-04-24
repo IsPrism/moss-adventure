@@ -1,4 +1,5 @@
-let tiles = fetch('tiles.json')
+let tilesJSON = fetch('tiles.json')
+let tiles = JSON.parse(tilesJSON)
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
