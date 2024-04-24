@@ -69,7 +69,7 @@ class Chunk {
 };
 
 let chunk1 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 0);
-let chunk2 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 0);
+let chunk2 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 1);
 
 tileset.onload = function() {
     chunk1.drawChunk();
