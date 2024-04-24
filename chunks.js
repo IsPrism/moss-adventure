@@ -1,4 +1,4 @@
-const tiles = fetch('tiles.json')
+const tiles = JSON.parse('tiles.json')
 
 console.log(tiles)
 
