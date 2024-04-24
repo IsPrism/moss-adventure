@@ -1,5 +1,7 @@
-let tilesJSON = fetch('tiles.json')
-let tiles = JSON.parse(tilesJSON)
+const fs = require('fs');
+const tilesJSON = fs.readFileSync('tiles.json')
+
+const tiles = JSON.parse(tilesJSON)
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
