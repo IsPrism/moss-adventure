@@ -7,6 +7,8 @@ fetch('tiles.json')
     })
     .then(data => console.log(data));
 
+JSON.parse(tiles)
+
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
         this.tilesList = tilesList;
