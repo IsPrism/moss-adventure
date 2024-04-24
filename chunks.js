@@ -73,4 +73,5 @@ let chunk2 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 0);
 
 tileset.onload = function() {
     chunk1.drawChunk();
+    chunk2.drawChunk();
 };
