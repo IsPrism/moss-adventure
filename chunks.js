@@ -49,18 +49,19 @@ let tiles = [
     },
 ];
 
-//the Chunk class takes 2 arguments: tilesList, which should be an array, and loot tables.
-
 class Chunk {
-    constructor(tilesList, lootTables) {
-        this.tilesList = tilesList
+    constructor(tilesList, posX, posY, lootTables) {
+        this.tilesList = tilesList;
+        this.posX = posX * tileWidth;
+        this.posY = posY * tileHeight;
     };
     drawChunk() {
-        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, 0, 0, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, this.posX, this.posY, tileWidth, tileHeight);
     };
 };
 
+let chunk1 = new Chunk([0], 0, 0);
+
 tileset.onload = function() {
-    let chunk1 = new Chunk([0], 3, 3, 3);
     chunk1.drawChunk();
 };
