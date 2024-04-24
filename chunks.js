@@ -1,7 +1,7 @@
 fetch('tiles.json')
     .then(response => response.json())
     .then(data => {
-        tiles = data
+        const tiles = data
     });
 
 class Chunk {
