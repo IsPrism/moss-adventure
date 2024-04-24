@@ -76,10 +76,10 @@ let chunk2 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 0);
 let chunk3 = new Chunk([4, 5, 4, 5, 4, 5, 4, 5, 4], 2, 0);
 let chunk4 = new Chunk([6, 7, 6, 7, 6, 7, 6, 7, 6], 3, 0);
 
-let chunk5 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 1);
-let chunk6 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 1);
-let chunk7 = new Chunk([4, 5, 4, 5, 4, 5, 4, 5, 4], 2, 1);
-let chunk8 = new Chunk([6, 7, 6, 7, 6, 7, 6, 7, 6], 3, 1);
+let chunk5 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 0, 1);
+let chunk6 = new Chunk([3, 2, 3, 2, 3, 2, 3, 2, 3], 1, 1);
+let chunk7 = new Chunk([5, 4, 5, 4, 5, 4, 5, 4, 5], 2, 1);
+let chunk8 = new Chunk([7, 6, 7, 6, 7, 6, 7, 6, 7], 3, 1);
 
 let chunk9 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 2);
 let chunk10 = new Chunk([2, 3, 2, 3, 2, 3, 2, 3, 2], 1, 2);
