@@ -1,6 +1,6 @@
-const tiles = fetch('tiles.json')
-
-console.log(tiles)
+fetch('tiles.json')
+    .then(response => response.json())
+    .then(data => console.log(data));
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
