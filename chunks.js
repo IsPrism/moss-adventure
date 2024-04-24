@@ -5,8 +5,6 @@ fetch('tiles.json')
   .then(data => {
     tiles = data;
   })
-  
-JSON.parse(tiles)
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
