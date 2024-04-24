@@ -44,7 +44,6 @@ let chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
 let chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
 let chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
 
-tileset.onload = function() {
     chunk1.drawChunk();
     chunk2.drawChunk();
     chunk3.drawChunk();
@@ -57,4 +56,3 @@ tileset.onload = function() {
     chunk10.drawChunk();
     chunk11.drawChunk();
     chunk12.drawChunk();
-};
