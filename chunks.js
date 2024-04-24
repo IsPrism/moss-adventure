@@ -1,4 +1,4 @@
-const tiles = JSON.parse('tiles.json')
+const tiles = JSON.stringify('tiles.json')
 
 console.log(tiles)
 
