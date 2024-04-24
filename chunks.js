@@ -1,4 +1,4 @@
-const tiles;
+let tiles;
 
 fetch('tiles.json')
     .then(response => response.json())
