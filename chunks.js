@@ -1,9 +1,8 @@
 fetch('tiles.json')
     .then(response => response.json())
     .then(data => {
-        const tiles = data
-    }
-);
+        tiles = data
+    });
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
