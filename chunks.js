@@ -1,5 +1,4 @@
-const fs = require('fs');
-const tilesJSON = fs.readFileSync('tiles.json')
+const tilesJSON = fetch('tiles.json')
 
 const tiles = JSON.parse(tilesJSON)
 
