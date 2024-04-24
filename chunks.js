@@ -72,19 +72,19 @@ class Chunk {
 };
 
 let chunk1 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 0);
-let chunk2 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 1, 0);
+let chunk2 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 0);
 let chunk3 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 0);
-let chunk4 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 3, 0);
+let chunk4 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 0);
 
 let chunk5 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 0, 1);
-let chunk6 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 1);
+let chunk6 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 1, 1);
 let chunk7 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 2, 1);
-let chunk8 = new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 1);
+let chunk8 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 3, 1);
 
 let chunk9 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 0, 2);
-let chunk10 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 1, 2);
-let chunk11 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
-let chunk12 = new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 3, 2);
+let chunk10= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 1, 2);
+let chunk11= new Chunk([0, 1, 0, 1, 0, 1, 0, 1, 0], 2, 2);
+let chunk12= new Chunk([1, 0, 1, 0, 1, 0, 1, 0, 1], 3, 2);
 
 tileset.onload = function() {
     chunk1.drawChunk();
