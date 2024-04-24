@@ -56,7 +56,7 @@ class Chunk {
         this.tilesList = tilesList
     };
     drawChunk() {
-        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, tileWidth, tileHeight, 0, 0, tileWidth, tileHeight);
+        ctx.drawImage(tileset, tiles[this.tilesList[0]].cropX, tiles[this.tilesList[0]].cropY, cropWidth, cropHeight, 0, 0, tileWidth, tileHeight);
     };
 };
 

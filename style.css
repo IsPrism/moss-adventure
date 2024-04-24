@@ -2,8 +2,8 @@ canvas {
     padding: 0;
     margin: auto;
     display: block;
-    width: 192;
-    height: 144;
+    width: 960;
+    height: 720;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -13,4 +13,5 @@ canvas {
 html, body{
     overflow: hidden;
     image-rendering: pixelated;
+    background-color: gray;
 }
