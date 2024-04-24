@@ -1,6 +1,4 @@
-const tilesJSON = fetch('tiles.json')
-
-const tiles = JSON.parse(tilesJSON)
+const tiles = fetch('tiles.json')
 
 class Chunk {
     constructor(tilesList, posX, posY, lootTables) {
