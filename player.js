@@ -1,6 +1,6 @@
 class Player {
     constructor() {
-        ctx.drawImage()
+        ctx.drawImage("resources/player.png", 0, 0, 16, 16, 16, 16, 16, 16)
     };
 };
 
