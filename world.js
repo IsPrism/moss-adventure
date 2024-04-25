@@ -18,3 +18,15 @@ tileset.onload = function() {
 };
 
 tileset.src = "resources/tileset.png";
+
+window.requestAnimationFrame(gameLoop)
+
+
+function gameLoop() {
+    draw();
+    window.requestAnimationFrame(gameLoop)
+};
+
+function draw() {
+    console.log("eenor")
+};
