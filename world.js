@@ -18,26 +18,3 @@ tileset.onload = function() {
 };
 
 tileset.src = "resources/tileset.png";
-
-const timeStep = 1/60
-
-let previousTime = 0;
-let delta = 0;
-
-const loop = time => {
-    const dt = time - previousTime;
-    delta = delta + dt;
-    while (delta > timeStep) {
-        //updating functions
-    };
-
-        //rendering functions
-
-    window.requestAnimationFrame(loop);
-};
-
-window.requestAnimationFrame(time => {
-    previousTime = time;
-  
-    window.requestAnimationFrame(loop);
-  });
