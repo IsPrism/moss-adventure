@@ -2,7 +2,7 @@ var tiles;
 
 async function drawAllChunks() {
   try {
-    const response = await fetch('tiles.json');
+    const response = await fetch('JSON/tiles.json');
     const data = await response.json();
     tiles = data;
 
